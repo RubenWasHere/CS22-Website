@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--SETTING CHARTSET, RESPONSIVE VIEWPORT, TITLE, STYLESHEET, FONTFAMILY, AOS ANIMATION IMPORT-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Maunga Club</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body id="cabinBody">
+
+    <body id="index">
+        <!--AOS ANIMATION IMPORT (TAKEN FROM https://michalsnik.github.io/aos/)-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    
+        <!--INTIZALIZE AOS ANIMATIONS-->
+        <script>
+                AOS.init(); 
+        </script>
+
+    <!--NAV BAR--> 
+    <div class="nav">
+        <div class="logo">
+            <a href="index.html">
+            <img src="img/logo.png" height="40">
+            </a>
+        </div>
+    <div class="links">
+        <a href="1.html">Kākāpo</a>
+        <a href="2.html"><span style="color:#94f2f4">Pūkeko</span></a>
+        <a href="3.html">Kererū</a>
+        <a href="hire.html">Hire</a>
+    </div>
+    </div>
+
+
+    <div class="landing">
+        <div class="landingText" data-aos="fade-up" data-aos-duration="1000"> <!--AOS ANIMATION-->
+            <h1> Pūkeko </h1> <br><br>
+            <h3> • Great for large groups/families wanting a chalet to themselves <br>
+                 • 6 Adults max <br>
+                 • 15 Children max <br>
+            </h3>
+            <div class="btn">
+               <a href="#gallery"><img src="img/arrow.gif" alt="arrow scroll" style="width:100px;height:100px;"></a>
+            </div>
+        </div> 
+    </div>
+
+
+    <div class="gallery" id="gallery">
+        <img src="img/pukeko/adult_bedroom.jpg" alt="adult_bedroom" />
+        <img src="img/pukeko/bathroom.jpg" alt="bathroom" />
+        <img src="img/pukeko/chalet_exterior.jpg" alt="cabin_exterior" />
+        <img src="img/pukeko/chalet_view.jpg" alt="cabin_view" />
+    </div>
+    
+
+</body>
+</html>

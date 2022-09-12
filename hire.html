@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--SETTING CHARTSET, RESPONSIVE VIEWPORT, TITLE, STYLESHEET, FONTFAMILY, AOS ANIMATION IMPORT-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Maunga Club</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="hire.css" />
+</head>
+
+<body id="hire">
+    <!--AOS ANIMATION IMPORT (TAKEN FROM https://michalsnik.github.io/aos/)-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+    <!--INTIZALIZE AOS ANIMATIONS-->
+    <script>
+            AOS.init(); 
+    </script>
+
+ <!--NAV BAR--> 
+ <div class="nav ">
+  <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" height="40">
+      </a>
+  </div>
+<div class="links">
+  <a href="1.html">Kākāpo</a>
+  <a href="2.html">Pūkeko</a>
+  <a href="3.html">Kererū</a>
+  <a href="hire.html">Hire</a>
+</div>
+</div>
+
+
+    <div class="formContainer">
+      <span class="big-circle" data-aos="fade-right" data-aos-duration="2000"></span>
+      <div class="form" data-aos="fade-up" data-aos-duration="800">
+        <div class="contact-info">
+          <h3 class="title">Hire a Chalet or Cabin</h3>
+          <p class="text">
+            Please Note: <br><br>
+            • Only Club members can access the chalets.<br><br>
+            • All chalet bookings must be from Friday to Sunday.<br><br>
+            • Chalets offer shared accommodation for between 6 and 40 people per chalet.<br><br>
+            • ID and proof of address is required<br><br>
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="img/email.png" class="icon" alt="" />
+              <p>maungaclub@gmail.com</p>
+            </div>
+            <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <p>09-262-1187</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form" data-aos="fade-left" data-aos-duration="1800">
+          <form action="hire.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Full Name</label>
+              <span>Full Name</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="number" min="0" name="adults" class="input" />
+              <label for="">Adults</label>
+              <span>Adults</span>
+            </div>
+            <div class="input-container">
+                <input type="number" min="0" name="children" class="input" />
+                <label for="">Children</label>
+                <span>Children</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            
+            <select id="cars" name="cars">
+              <option value="Kakapo">Kākāpo</option>
+              <option value="saab">Pūkeko</option>
+              <option value="fiat">Kererū</option>
+              <option value="fiat">None</option>
+            </select>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
